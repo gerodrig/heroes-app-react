@@ -1,5 +1,6 @@
 import { CustomBreadcrumbs } from "@/components/custom/CustomBreadcrumbs";
 import { CustomJumbotron } from "@/components/custom/CustomJumbotron";
+import { CustomPagination } from "@/components/custom/CustomPagination";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { HeroGrid } from "@/heroes/components/HeroGrid";
 import { HeroStats } from "@/heroes/components/HeroStats";
@@ -66,6 +67,9 @@ export const HomePage = () => {
             <HeroGrid />
           </TabsContent>
         </Tabs>
+
+        {/* Pagination */}
+        <CustomPagination totalPages={8} />
       </>
     </>
   );
